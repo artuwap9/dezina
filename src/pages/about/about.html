@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="color1">
+    <ion-title>
+      Best Seller
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="BestSeller-Page">
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let product of bestSellerProducts">
+      <img [src]="product.image"/>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

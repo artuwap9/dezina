@@ -1,0 +1,23 @@
+.details-Page {
+    text-align: left;
+} 
+.contentDetails {
+    background-color: #1c1c1c;
+}
+
+.informationCard {
+    background-color: #191919;
+    ion-card-header {
+        color: #DFDFDF;
+    }
+    ion-card-content {
+        color: #DFDFDF;
+    }
+    ion-item{
+        background-color: transparent;
+        color: #DFDFDF;
+    }
+    ion-badge{
+        background-color: #9A00CF;
+    }
+}

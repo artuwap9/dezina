@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="color1">
+    <ion-title font="Courier New">Products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home-Page">
+  <ion-card *ngFor="let product of allProducts" (click)="goToProductDetailPage(product)">
+    <img [src]="product.image"/>
+    <div class="card-title">{{product.name}}</div>
+    <div class="card-subtitle">{{product.gender}}</div>
+  </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab (click)="openFilterModal()">
+      <ion-icon name="settings"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>
