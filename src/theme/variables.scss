@@ -40,7 +40,10 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
   color1:     #2e2e2e,
+  color2:     rgb(207, 155, 109),
+  color3:     rgb(6, 16, 19),
   purple:     #9A00CF,
+  purple2:    #D96AFF,
 );
 
 
@@ -86,5 +89,55 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+//@import "roboto";
+//@import "noto-sans";
+
+@font-face{
+  font-family: "Sorreada Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Sorreada-Pro/400/Sorreda-Pro.ttf");
+}
+@font-face{
+  font-family: "Smile";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Smile-of-the-Ocean/400/Smile-of-the-Ocean.ttf");
+}
+@font-face{
+  font-family: "Roboto Thin";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/roboto/100/Roboto-Thin.ttf");
+}
+@font-face{
+  font-family: "Roboto Thin Italic";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/roboto/100/Roboto-ThinItalic.ttf");
+}
+@font-face{
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/roboto/200/Roboto-Light.ttf");
+}
+@font-face{
+  font-family: "Roboto Light Italic";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/roboto/200/Roboto-LightItalic.ttf");
+}
+
+@font-face{
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/roboto/300/Roboto-Regular.ttf");
+}
+
+/*$font-family-base: "SRoboto Light";
+body{
+  font-family: 'Roboto Light' !important;
+  font-weight: 400 !important;
+}*/

@@ -6,8 +6,8 @@
 -->
 <ion-header class="details-Page">
 
-  <ion-navbar color="color1">
-    <ion-title>{{productDetails.name}}</ion-title>
+  <ion-navbar color="color2">
+    <ion-title><div class="a">{{productDetails.name}}</div></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,37 +15,27 @@
 
 <ion-content padding class="contentDetails">
 
-  <ion-card>
-    <img [src]="productDetails.image"/>
-  </ion-card>
-
   <ion-card class="informationCard">
+    <img [src]="productDetails.image" class="img1"/>
+    <div class="c" (click)="openGallery()">Fotos <ion-icon name="images"></ion-icon></div>
+
+   
     <ion-card-header>
       Description
     </ion-card-header>
     <ion-card-content>
       {{productDetails.description}}
     </ion-card-content>
-
-    <ion-card-header>
-        Extra Information
-    </ion-card-header>
     <ion-card-content>
       <ion-item>
-        Price
+        Precio
         <ion-badge item-right>
           ${{productDetails.price}}
         </ion-badge>
       </ion-item>
-      <ion-item>
-        Gender
-          <ion-badge item-right>
-            {{productDetails.gender}}
-          </ion-badge>
-        </ion-item>
     </ion-card-content>
     <ion-list>
-      <button ion-item color="purple">
+      <button ion-item color="color2">
         <ion-icon name="cart" item-start></ion-icon>
         Shopping
       </button>

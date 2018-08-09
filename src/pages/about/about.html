@@ -1,15 +1,24 @@
 <ion-header>
-  <ion-navbar color="color1">
+  <ion-navbar color="color2">
     <ion-title>
-      Best Seller
+      <div class="a">
+      Popular
+      </div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="BestSeller-Page">
-  <ion-slides pager="true">
-    <ion-slide *ngFor="let product of bestSellerProducts">
-      <img [src]="product.image"/>
-    </ion-slide>
-  </ion-slides>
+<ion-content padding class="bestSellerPage">
+  <ion-card *ngFor="let product of bestSellerProducts">
+      <ion-card-header>
+          <ion-card-title><h1>{{product.name}}</h1><br><img [src]="product.image"/></ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          
+          <h2>{{product.description}}</h2>
+          <button ion-button block class="button button1">
+            Comprar (${{product.price}})
+          </button>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

@@ -2,8 +2,22 @@ page-about {
     ion-slides {
         height: 200px;
     }
+    h2{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
-
-.BestSeller-Page {
-    background-color: #1c1c1c;
+.bestSellerPage{
+    background-color: rgb(241, 241, 241);
+}
+.button1{
+    margin-top: 16px;
+    border-radius: 24px;
+    background-color: rgb(162, 111, 72);
+    box-shadow: 1px 1px 5px #888888;
+    font-family: "Roboto Regular";
+}
+.wrapping-list .item-content, .wrapping-list .item {
+    overflow: initial;
+    white-space: initial;
 }

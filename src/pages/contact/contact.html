@@ -1,17 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="color2">
     <ion-title>
-      Contact
+      <div class="a">
+      Contáctanos
+      </div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header>Déjanos un mensaje con tu email</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-label stacked>Mensaje</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <ion-buttons end> 
+      <button ion-button round class="buttonSend">
+      Enviar
+      </button>
+    </ion-buttons>
+    <ion-list-header>Mayor información:</ion-list-header>
+    <ion-item class="selectable">Correo: <a href="">decor.lupis@hotmail.com</a></ion-item>
+    <ion-item class="selectable">WhatsApp: <a href="">+52 (1) 449 111 8309</a></ion-item>
   </ion-list>
 </ion-content>

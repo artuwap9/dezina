@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
   templateUrl: 'filter-modal.html',
 })
 export class FilterModalPage {
-  public femaleSelected = true;
-  public maleSelected = true;
+  public chocolateSelected = true;
+  public vegetarianSelected = true;
+  public mousseSelected = true;
+  public nutsSelected = true;
 
   constructor(private viewControlleR: ViewController, public navCtrl: NavController, public navParams: NavParams) {
-    this.femaleSelected = this.navParams.get("femaleSelected");
-    this.maleSelected = this.navParams.get("maleSelected");
+    this.chocolateSelected = this.navParams.get("chocolateSelected");
+    this.vegetarianSelected = this.navParams.get("vegetarianSelected");
+    this.mousseSelected = this.navParams.get("mousseSelected");
+    this.nutsSelected = this.navParams.get("nutsSelected");
   }
 
   ionViewDidLoad() {
@@ -28,8 +32,10 @@ export class FilterModalPage {
 
   closeModal(){
     let filterState = {
-      femaleSelected: this.femaleSelected,
-      maleSelected: this.maleSelected
+      chocolateSelected: this.chocolateSelected,
+      vegetarianSelected: this.vegetarianSelected,
+      mousseSelected: this.mousseSelected,
+      nutsSelected: this.nutsSelected,
     };
     this.viewControlleR.dismiss(filterState);
   }

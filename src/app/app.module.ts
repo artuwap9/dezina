@@ -1,5 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductProvider } from '../providers/product/product'; 
 import { ProductDetailsPage } from "../pages/product-details/product-details";
 import { FilterModalPage } from "../pages/filter-modal/filter-modal";
+import { GalleryModalModule, GalleryModalHammerConfig } from 'ionic-gallery-modal';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FilterModalPage } from "../pages/filter-modal/filter-modal";
     HomePage,
     TabsPage,
     ProductDetailsPage,
-    FilterModalPage
+    FilterModalPage,
   ],
   imports: [
     HttpModule,
@@ -32,12 +33,8 @@ import { FilterModalPage } from "../pages/filter-modal/filter-modal";
     BrowserModule,
     IonicModule.forRoot(MyApp, {
       tabsPlacement: "bottom",
-      /*platforms: {
-        ios: {
-          tabsPlacement: "top"
-        }
-      }*/
-    })
+    }),
+    GalleryModalModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,7 +50,11 @@ import { FilterModalPage } from "../pages/filter-modal/filter-modal";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ProductProvider
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: GalleryModalHammerConfig
+    },
+    ProductProvider,
   ]
 })
 export class AppModule {}

@@ -17,5 +17,4 @@ export class ProductProvider {
   getProducts(){
     return this.http.get("/assets/data.json");
   }
-
 }

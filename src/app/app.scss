@@ -18,30 +18,41 @@
 ion-header {
     text-align: center;
 }
+ion-content {
+    font-family: "Roboto Light";
+}
+h3{
+    font-family: "Roboto Light Italic";
+}
+div.a{
+    font-size: 22px;
+    font-family: "Roboto Light Italic";
+}
 
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
-    color: #D96AFF; /*your  text color */
+    color: rgb(255, 255, 255); /*your  text color */
 }
 
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
-    color: #D96AFF; /*your  text color */
+    color: rgb(255, 255, 255); /*your  text color */
 }
 
 .tabs-wp .tab-button[aria-selected=true] .tab-button-icon {
-    color: #D96AFF; /*your  text color */
+    color: rgb(255, 255, 255); /*your  text color */
 }
 
 .tabs-md .tab-button[aria-selected=true]  {
-    color: #D96AFF; /*your  text color */
-    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255); /*rgb(158, 70, 143) */
+    background-color: rgb(106, 71, 52);
 }
 
 .tabs-ios .tab-button[aria-selected=true]  {
-    color: #D96AFF; /*your  text color */
-    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255); /*#D96AFF */
+    background-color: rgb(106, 71, 52);
 }
 
 .tabs-wp .tab-button[aria-selected=true]  {
-    color: #D96AFF; /*your  text color */
-    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255); /*your  text color */
+    background-color: rgb(106, 71, 52);
+    border-top: 0px solid;
 }

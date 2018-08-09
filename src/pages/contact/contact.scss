@@ -1,3 +1,17 @@
 page-contact {
-
+    .buttonSend{
+        margin-top: 1em;
+        align-content: right;
+        margin-bottom: 4em;
+        margin-right: 2em;
+    }
+}
+input[type="text"]{ 
+    display: inline-block;
+}
+.selectable {
+-webkit-user-select: text;
+-moz-user-select: text;
+-ms-user-select: text;
+user-select: text;
 }

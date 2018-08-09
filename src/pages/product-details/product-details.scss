@@ -1,23 +1,32 @@
 .details-Page {
     text-align: left;
 } 
+.gallery-modal{
+    background: rgba(0, 0, 0, .9) !important;
+}
 .contentDetails {
-    background-color: #1c1c1c;
+    background-color: rgb(241, 241, 241);
 }
-
+.img1{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
 .informationCard {
-    background-color: #191919;
-    ion-card-header {
-        color: #DFDFDF;
-    }
-    ion-card-content {
-        color: #DFDFDF;
-    }
-    ion-item{
-        background-color: transparent;
-        color: #DFDFDF;
-    }
     ion-badge{
-        background-color: #9A00CF;
+        background-color: rgb(162, 111, 72);
     }
 }
+div.c {
+    text-align: right;
+    position: relative ;
+    left: 5%;
+    font-size: 1.0em;
+    width: 90%;
+    font-weight: bold;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 7px;
+  }

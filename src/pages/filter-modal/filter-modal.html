@@ -6,27 +6,37 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="color2">
     <ion-buttons end>
       <button ion-button (click)="closeModal()">
-        <ion-icon name="close"></ion-icon>
+          <div class="b">
+        Listo
+        </div>
       </button>
     </ion-buttons>
-    <ion-title>FilterModal</ion-title>
+    <ion-title><div class="a">Filtro</div></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="contentFilter">
   <ion-list>
-    <ion-item>
-      <ion-label>Female</ion-label>
-      <ion-toggle [(ngModel)]="femaleSelected" ngDefaultControl></ion-toggle>
+    <ion-item class="contentFilter">
+      <ion-label>Chocolate</ion-label>
+      <ion-toggle [(ngModel)]="chocolateSelected" ngDefaultControl color="color2"></ion-toggle>
     </ion-item>
-    <ion-item>
-      <ion-label>Male</ion-label>
-      <ion-toggle [(ngModel)]="maleSelected" ngDefaultControl></ion-toggle>
+    <ion-item class="contentFilter">
+      <ion-label>Vegetariano</ion-label>
+      <ion-toggle [(ngModel)]="vegetarianSelected" ngDefaultControl color="color2"></ion-toggle>
+    </ion-item>
+    <ion-item class="contentFilter">
+      <ion-label>Mousse</ion-label>
+      <ion-toggle [(ngModel)]="mousseSelected" ngDefaultControl color="color2"></ion-toggle>
+    </ion-item>
+    <ion-item class="contentFilter">
+      <ion-label>Con Nuez</ion-label>
+      <ion-toggle [(ngModel)]="nutsSelected" ngDefaultContro color="color2"l></ion-toggle>
     </ion-item>
   </ion-list>
 </ion-content>
